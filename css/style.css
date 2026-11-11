@@ -233,7 +233,7 @@ header {
 .hero_inner {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    aling-items: center;
+    align-items: center;
     gap: var(--space-5);
 }
 
@@ -248,7 +248,7 @@ header {
     background: rgb(200 240 60 / 0.14);
     color: var(--color-accent);
     font-size: 0.85rem;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
 }
@@ -270,7 +270,7 @@ header {
     aspect-ratio: 4 / 5;
     object-fit: cover;
     border-radius: var(--radius-lg);
-    box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 0.5);
+    box-shadow: 0 1.5rem 0.75rem rgb(0 0 0 / 0.5);
 }
 
 .badge {
