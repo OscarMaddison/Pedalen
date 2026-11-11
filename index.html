@@ -17,6 +17,25 @@
     >
 </head>
 <body>
-    <h1>Pedalen cykelverkstad</h1>
+    <!-- Hoppa över länl, det är det första som får fokus när man trycker Tab, låt besökaren hoppa över meny -->
+    <a href="#innehall" class="skip">Hoppa till innehållet</a>
+    <header class="header">
+        <div class="container header_inner">
+            <a href="index.html" class="logo">Pedalen</a>
+            <!-- Aria-label, förklarar för skärmläsaren vad menyn heter -->
+            <nav aria-label="Huvudmeny">
+                <!-- Menyn är en lista, skärmläsaren säger "Lista med xxx punkter" -->
+                 <ul class="nav">
+                    <li><a href="#tjanster">Tjänster</a></li>
+                    <li><a href="#priser">Priser</a></li>
+                    <li><a href="#oppeter">Öppetider</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                 </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Pedalen cykelverkstad</h1>
+    </main>
 </body>
 </html>
