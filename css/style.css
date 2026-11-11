@@ -36,8 +36,6 @@
 /*Grundstil*/
 *, *::before, *::after {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 /* Hoppar till ankarlänk, men med bestämt avstånf, uppåt eller nedåt */
@@ -46,12 +44,13 @@ html {
 }
 
 body {
+    margin: 0;
     font-family: var(--font-body);
     font-size: 1.0625rem;
     line-height: 1.6;
     color: var(--color-ink);
     background-color: var(--color-bg);
-}
+}*/
 
 img {
     max-width: 100%;
@@ -68,7 +67,6 @@ h1, h2, h3 {
 
 h1 {
     font-weight: 800;
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
 }
 
 h2 {
@@ -81,12 +79,17 @@ h3 {
     font-size: 1.35rem;
 }
 
+p {
+    margin: 0 0 var(--space-2);
+}
+
 a {
     color: var(--color-primary);
 }
 
 .focus-visible {
-    outline: 3px solid var(--color-primary);
+    outline: 3px solid var(--focus, var(--color-primary));
+    outline-offset: 3px;
 }
 
 .on-dark {
@@ -99,7 +102,7 @@ a {
 }
 
 .section {
-    padding-block: var(--space-5);
+    padding-block: var(--space-6);
 }
 
 .section--tint {
@@ -108,7 +111,6 @@ a {
 
 .section_intro {
     color: var(--color-muted);
-    font-size: 1.25;
     margin-bottom: var(--space-4);
 }
 
