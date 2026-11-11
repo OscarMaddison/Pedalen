@@ -25,6 +25,30 @@
   --radius: 1.25rem;  /* rundade hörn på kort */
   --radius-lg: 2rem;  /* större rundning, för bilden */
   --shadow: 0 0.5rem 2rem rgba(16, 26, 20, 0.1);  /* skugga: x y suddighet färg (0.1 = 10 % täckning) */
-  --text-hero: clamp(2.5rem, 6vw, 4.5rem);  /* clamp(minst, ideal, störst): växer med fönstret */
+  --text-hero: clamp(
+        2.5rem,
+        6vw,
+        4.5rem
+    );  /* clamp(minst, ideal, störst): växer med fönstret */
   --max-width: 70rem;  /* innehållets maxbredd */
+}
+
+/*Grundstil*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hoppar till ankarlänk, men med bestämt avstånf, uppåt eller nedåt */
+html {
+    scroll-padding-top: 5rem;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--color-ink);
+    background-color: var(--color-bg);
 }
